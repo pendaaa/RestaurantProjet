@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Compte Page
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list lines="none">
+    <ion-list-header>
+      <ion-label>Informations Personnelles</ion-label>
+    </ion-list-header>
+    <ion-item >
+      <ion-icon slot="start" color="medium" name="person"></ion-icon>
+      <ion-label>{{username}}</ion-label>
+      <ion-label>{{token}}</ion-label>
+      
+    </ion-item>
+    <ion-button expand="block" color="danger" (click)="deconnexion()"> Deconnexion </ion-button>
+  </ion-list>
+</ion-content>

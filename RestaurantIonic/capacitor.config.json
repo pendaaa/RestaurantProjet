@@ -1,0 +1,8 @@
+{
+  "appId": "com.resto.app",
+  "appName": "restoApp",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "www",
+  "cordova": {}
+}
