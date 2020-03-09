@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "comptes",
+  "info": {
+    "name": "compte",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "TypeCompte": {
+      "unique": true,
+      "enum": [
+        "Admin,Utilisateur"
+      ],
+      "required": true,
+      "type": "enumeration"
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/comptes",
+      "handler": "Compte.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comptes/count",
+      "handler": "Compte.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/comptes/:id",
+      "handler": "Compte.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/comptes",
+      "handler": "Compte.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/comptes/:id",
+      "handler": "Compte.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/comptes/:id",
+      "handler": "Compte.destroy",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

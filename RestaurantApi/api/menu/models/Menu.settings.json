@@ -1,0 +1,27 @@
+{
+  "connection": "default",
+  "collectionName": "menus",
+  "info": {
+    "name": "menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "nom": {
+      "required": true,
+      "type": "string"
+    },
+    "restaurant": {
+      "model": "restaurant",
+      "via": "menus"
+    },
+    "plats": {
+      "collection": "plats",
+      "via": "menu"
+    }
+  }
+}

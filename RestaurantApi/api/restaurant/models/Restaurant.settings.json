@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "restaurants",
+  "info": {
+    "name": "restaurant",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "nom": {
+      "unique": true,
+      "required": true,
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "menus": {
+      "collection": "menu",
+      "via": "restaurant"
+    },
+    "plats": {
+      "collection": "plats",
+      "via": "restaurant"
+    },
+    "horaire": {
+      "type": "date"
+    },
+    "latitude": {
+      "type": "integer"
+    },
+    "longitude": {
+      "type": "integer"
+    }
+  }
+}
